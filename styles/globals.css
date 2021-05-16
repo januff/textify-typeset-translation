@@ -1,16 +1,81 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Arbutus Slab;
+    font-weight: 400;
+    src: url(/fonts/ArbutusSlab-Regular.ttf);
+  }
+  @font-face {
+    font-family: Milk Mustache;
+    font-weight: 400;
+    src: url(/fonts/MilkMustacheBB-Bold.otf);
+  }
+  @font-face {
+    font-family: Midnight Snack;
+    font-weight: 400;
+    src: url(/fonts/MIDNSBRG.TTF);
+  }
+  @font-face {
+    font-family: Sequentialist;
+    font-weight: 400;
+    src: url(/fonts/SequentialistBB.ttf);
+  }
+  @font-face {
+    font-family: Sequentialist;
+    font-weight: 400;
+    src: url(/fonts/SequentialistBB.ttf);
+  }
+  @font-face {
+    font-family: Spinner Rack;
+    font-weight: 400;
+    src: url(/fonts/SpinnerRackProBB-Regular.ttf);
+  }
+  @font-face {
+    font-family: Ready For Anything;
+    font-weight: 400;
+    src: url(/fonts/ReadyForAnythingBB-Regular.ttf);
+  }
+  @font-face {
+    font-family: Ready For Anything;
+    font-weight: 700;
+    src: url(/fonts/ReadyForAnythingBB-Bold.ttf);
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.home-container {
+  @apply bg-gray-300 p-4 w-screen h-screen flex items-center justify-center tracking-tight;
+  font-family: Ready For Anything;
 }
 
-* {
-  box-sizing: border-box;
+.home-grid {
+  @apply grid grid-cols-6 w-full h-full gap-4 max-w-screen-md;
+  grid-template-rows: repeat(12, minmax(0, 1fr));
+}
+
+.header {
+  @apply col-span-6 flex justify-start items-center;
+  font-family: Midnight Snack;
+}
+
+.upload {
+  @apply transform shadow-xl hover:scale-105 duration-200 rounded-xl border-2 p-4 border-dashed row-span-2 col-span-2 flex justify-center items-center;
+}
+
+.translation {
+  @apply col-span-4 bg-gray-400 flex p-4 justify-center items-center;
+  grid-row: span 9 / span 9;
+  font-weight: 700;
+}
+
+.page-info {
+  @apply col-span-6;
+  grid-row: span 3 / span 3;
+}
+
+.last-five {
+  @apply rounded-xl border-2 col-span-2 flex justify-center items-center;
+  grid-row: span 7 / span 7;
 }
