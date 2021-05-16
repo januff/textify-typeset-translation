@@ -19,8 +19,8 @@
 .DS_Store
 *.pem
 
-# fonts (temp)
-/public/fonts
+# fonts 
+/public/fonts/unused/
 
 # debug
 npm-debug.log*
