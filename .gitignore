@@ -20,7 +20,7 @@
 *.pem
 
 # fonts 
-/public/fonts/unused/
+/public/fonts/unused
 
 # debug
 npm-debug.log*
