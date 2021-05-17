@@ -13,14 +13,14 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url('/fonts/ReadyForAnythingBB-Regular.ttf');
+    src: url('/fonts/ReadyforAnythingBB-Regular.ttf');
   }
   @font-face {
     font-family: 'Ready For Anything';
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    src: url('/fonts/ReadyForAnythingBB-Bold.ttf');
+    src: url('/fonts/ReadyforAnythingBB-Bold.ttf');
   }
 }
 
