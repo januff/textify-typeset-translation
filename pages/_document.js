@@ -22,6 +22,12 @@ class MyDocument extends Document {
             as="font"
             crossOrigin=""
           />
+          <link
+            rel="preload"
+            href="/fonts/MIDNSBRG.TTF"
+            as="font"
+            crossOrigin=""
+          />
         </Head>
         <body>
           <Main />

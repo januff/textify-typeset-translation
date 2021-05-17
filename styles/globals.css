@@ -4,54 +4,29 @@
 
 @layer base {
   @font-face {
-    font-family: Arbutus Slab;
+    font-family: 'Midnight Snack';
     font-weight: 400;
-    src: url(/fonts/ArbutusSlab-Regular.ttf);
+    src: url('/fonts/MIDNSBRG.TTF');
   }
   @font-face {
-    font-family: Milk Mustache;
-    font-weight: 400;
-    src: url(/fonts/MilkMustacheBB-Bold.otf);
-  }
-  @font-face {
-    font-family: Midnight Snack;
-    font-weight: 400;
-    src: url(/fonts/MIDNSBRG.TTF);
-  }
-  @font-face {
-    font-family: Sequentialist;
-    font-weight: 400;
-    src: url(/fonts/SequentialistBB.ttf);
-  }
-  @font-face {
-    font-family: Sequentialist;
-    font-weight: 400;
-    src: url(/fonts/SequentialistBB.ttf);
-  }
-  @font-face {
-    font-family: Spinner Rack;
-    font-weight: 400;
-    src: url(/fonts/SpinnerRackProBB-Regular.ttf);
-  }
-  @font-face {
-    font-family: "Ready For Anything";
+    font-family: 'Ready For Anything';
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url("/fonts/ReadyForAnythingBB-Regular.ttf");
+    src: url('/fonts/ReadyForAnythingBB-Regular.ttf');
   }
   @font-face {
-    font-family: "Ready For Anything";
+    font-family: 'Ready For Anything';
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    src: url("/fonts/ReadyForAnythingBB-Bold.ttf");
+    src: url('/fonts/ReadyForAnythingBB-Bold.ttf');
   }
 }
 
 .home-container {
   @apply bg-gray-300 p-4 w-screen h-screen flex items-center justify-center tracking-tight;
-  font-family: "Ready For Anything";
+  font-family: 'Ready For Anything';
 }
 
 .home-grid {
@@ -61,7 +36,7 @@
 
 .header {
   @apply col-span-6 flex justify-start items-center;
-  font-family: "Ready For Anything";
+  font-family: 'Midnight Snack';
 }
 
 .upload {
