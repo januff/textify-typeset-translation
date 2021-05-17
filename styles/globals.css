@@ -34,20 +34,24 @@
     src: url(/fonts/SpinnerRackProBB-Regular.ttf);
   }
   @font-face {
-    font-family: Ready For Anything;
+    font-family: "Ready For Anything";
     font-weight: 400;
-    src: url(/fonts/ReadyForAnythingBB-Regular.ttf);
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/ReadyForAnythingBB-Regular.ttf");
   }
   @font-face {
-    font-family: Ready For Anything;
+    font-family: "Ready For Anything";
     font-weight: 700;
-    src: url(/fonts/ReadyForAnythingBB-Bold.ttf);
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/ReadyForAnythingBB-Bold.ttf");
   }
 }
 
 .home-container {
   @apply bg-gray-300 p-4 w-screen h-screen flex items-center justify-center tracking-tight;
-  font-family: Ready For Anything;
+  font-family: "Ready For Anything";
 }
 
 .home-grid {
@@ -57,7 +61,7 @@
 
 .header {
   @apply col-span-6 flex justify-start items-center;
-  font-family: Ready For Anything;
+  font-family: "Ready For Anything";
 }
 
 .upload {
