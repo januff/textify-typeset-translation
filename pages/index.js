@@ -12,13 +12,13 @@ export default function Home() {
   return (
     <div className="home-container">
       <Head>
-        <link
+        <Link
           rel="preload"
           href="/fonts/ReadyforAnythingBB-Regular.ttf"
           as="font"
           crossOrigin=""
         />
-        <link
+        <Link
           rel="preload"
           href="/fonts/ReadyforAnythingBB-Bold.ttf"
           as="font"
