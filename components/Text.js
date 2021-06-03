@@ -2,7 +2,7 @@ import Predictions from "@aws-amplify/predictions"
 import { photoPlaceholder } from "@aws-amplify/ui"
 import { useEffect } from "react"
 
-const PageInfo = ({ page, setPage }) => {
+const Text = ({ page, setPage }) => {
 
   const getTranslation = (text) => {
     console.log(text)
@@ -44,9 +44,9 @@ const PageInfo = ({ page, setPage }) => {
   }, [page.text?.fullText, page.text?.fullTranslation])
 
   return (
-    <div className="page-info leading-tight p-4 flex bg-gray-400 text-base tracking-tight gap-x-4 overflow-y-hidden overflow-y-scroll">
+    <div className="text leading-tight p-4 flex bg-gray-400 text-base tracking-tight gap-x-4 overflow-y-hidden overflow-y-scroll">
       <small 
-        contentEditable="true"
+        // contentEditable="true"
         onInput={e => editTask(e.currentTarget.textContent)}
         className="w-1/2 p-4 rounded-xl bg-gray-100">
         {page.text?.fullText ? 
@@ -63,4 +63,4 @@ const PageInfo = ({ page, setPage }) => {
   )  
 }
   
-export default PageInfo
+export default Text

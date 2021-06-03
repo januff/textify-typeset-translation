@@ -6,26 +6,34 @@
   @font-face {
     font-family: 'Midnight Snack';
     font-weight: 400;
+    font-display: auto;
     src: url('/fonts/MIDNSBRG.TTF');
   }
   @font-face {
     font-family: 'Ready For Anything';
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: auto;
     src: url('/fonts/ReadyforAnythingBB-Regular.ttf');
   }
   @font-face {
     font-family: 'Ready For Anything';
     font-weight: 700;
     font-style: normal;
-    font-display: swap;
+    font-display: auto;
     src: url('/fonts/ReadyforAnythingBB-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Sequentialist';
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    src: url('/fonts/unused/SequentialistBB.ttf');
   }
 }
 
 .home-container {
-  @apply bg-gray-300 p-4 w-screen h-screen flex items-center justify-center tracking-tight;
+  @apply bg-gray-600 p-4 w-screen h-screen flex items-center justify-center tracking-tight;
   font-family: 'Ready For Anything';
 }
 
@@ -37,19 +45,21 @@
 .header {
   @apply col-span-6 flex justify-start items-center;
   font-family: 'Midnight Snack';
+  color: #D3D3D3;
+  text-shadow: 6px 6px 0px #404040, 7px 7px 0px #404040, 8px 8px 0px #404040, 9px 9px 0px #404040; 
 }
 
-.upload {
-  @apply transform shadow-xl hover:scale-105 duration-200 rounded-xl border-2 p-4 border-dashed row-span-2 col-span-2 flex justify-center items-center;
+.buttons {
+  @apply row-span-2 col-span-2 flex flex-col justify-between;
 }
 
-.translation {
+.image {
   @apply col-span-4 bg-gray-400 flex p-4 justify-center items-center;
   grid-row: span 9 / span 9;
   font-weight: 700;
 }
 
-.page-info {
+.text {
   @apply col-span-6;
   grid-row: span 3 / span 3;
 }
@@ -57,4 +67,8 @@
 .last-five {
   @apply rounded-xl border-2 col-span-2 flex justify-center items-center;
   grid-row: span 7 / span 7;
+}
+
+button {
+  @apply border-2 border-dashed rounded-xl text-white font-bold py-1 px-2 w-full inline-flex items-center transform transition duration-300 hover:scale-105;
 }

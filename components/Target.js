@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const Translation = ({ page, setPage }) => {
+const Target = ({ page, setPage }) => {
 
   // https://stackoverflow.com/questions/64956977/image-onload-width-is-undefined
 
@@ -27,7 +27,7 @@ const Translation = ({ page, setPage }) => {
   }, [page.url]);
 
   return (
-    <div className="translation">
+    <div className="image">
       { imageLoaded &&
         <img 
           src={page.url}
@@ -43,8 +43,6 @@ const Translation = ({ page, setPage }) => {
       }
       { imageLoaded ?
         <svg 
-          width={ page.width }
-          height={ page.height }
           preserveAspectRatio="xMidYMid meet"
           viewBox={`0 0 ${page.width} ${page.height}`}
           style={{  
@@ -54,12 +52,13 @@ const Translation = ({ page, setPage }) => {
             position: 'absolute'
           }}>
           {/* <image
-            opacity="0.2"
             width={ page.width }
             height={ page.height }
             href={ page.url } /> */}
           { page.text && page.text.words.map((word, i) => (
-            <g key={i}>
+            <g 
+              className="transition duration-200 cursor-pointer hover:opacity-10"
+              key={i}>
               <rect 
                 fill="yellow"
                 fillOpacity="0.5"
@@ -76,7 +75,7 @@ const Translation = ({ page, setPage }) => {
                 textAnchor="middle"
                 textLength={word.boundingBox.width * 100 + "%"}
                 fontSize={word.boundingBox.height * page.height + "px"}
-                y={(word.boundingBox.top * 100) + (word.boundingBox.height * 90) + "%"}
+                y={(word.boundingBox.top * 100) + (word.boundingBox.height * 80) + "%"}
                 x={(word.boundingBox.left * 100) + ((word.boundingBox.width * 100)/2) + "%"}>
                   {word.text}
               </text>
@@ -89,4 +88,4 @@ const Translation = ({ page, setPage }) => {
   )  
 }
   
-export default Translation
+export default Target

@@ -1,9 +1,9 @@
 import { useState } from "react"
-import Upload from "../components/Upload"
+import Buttons from "../components/Buttons"
 import LastFive from "../components/LastFive"
-import PageInfo from "../components/PageInfo"
+import Text from "../components/Text"
 import Header from "../components/Header"
-import Translation from "../components/Translation"
+import Target from "../components/Target"
 
 export default function Home() {
   const [page, setPage] = useState({ message: null })
@@ -11,14 +11,14 @@ export default function Home() {
     <div className="home-container">
       <div className="home-grid">
         <Header />
-        <Translation 
+        <Target 
           page={ page } 
           setPage={ setPage } />
-        <Upload 
+        <Buttons 
           page={ page }
           setPage={ setPage } />
         <LastFive />
-        <PageInfo 
+        <Text 
           page={ page }
           setPage={ setPage } />
       </div>

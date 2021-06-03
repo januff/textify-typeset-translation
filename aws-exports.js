@@ -8,7 +8,7 @@ const awsmobile = {
     "aws_user_pools_id": "us-east-1_0itWoGD9f",
     "aws_user_pools_web_client_id": "4lgnqq43t0vo3gd4atj9ek4p7l",
     "oauth": {},
-    "aws_user_files_s3_bucket": "next-tail-amp-bucket112805-dev",
+    "aws_user_files_s3_bucket": "trans-next-tail-v2-bucket112805-dev",
     "aws_user_files_s3_bucket_region": "us-east-1",
     "predictions": {
         "identify": {

@@ -8,7 +8,7 @@
     }
   },
   "storage": {
-    "nextTailAmplifyStorage": {
+    "transNextTailV2": {
       "service": "S3",
       "providerPlugin": "awscloudformation"
     }
