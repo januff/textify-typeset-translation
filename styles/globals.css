@@ -68,7 +68,7 @@
 .easy-edit-textarea {
   @apply w-1/2 p-2 rounded-xl leading-tight tracking-tight bg-gray-100;
   min-height: 180px !important;
-  min-width: 330px;
+  min-width: 320px;
   max-width: 45vw;
   line-height: 1.35rem !important;
 }
