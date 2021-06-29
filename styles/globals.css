@@ -61,8 +61,8 @@
 }
 
 .text > * {
-  @apply w-1/2 p-2 rounded-xl text-xs sm:text-lg leading-tight tracking-tight bg-gray-100;
-  line-height: 1.5rem !important;
+  @apply w-1/2 p-2 rounded-xl text-sm sm:text-lg leading-tight tracking-tight bg-gray-100;
+  line-height: 1.35rem !important;
 }
 
 .easy-edit-textarea {
@@ -70,7 +70,7 @@
   min-height: 180px !important;
   min-width: 330px;
   max-width: 45vw;
-  line-height: 1.25rem !important;
+  line-height: 1.35rem !important;
 }
 
 .buttons {

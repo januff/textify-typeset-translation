@@ -8,7 +8,7 @@ export const Previous = ({ page, setPage }) => {
   return (
     <div className="previous overflow-y-scroll p-1 sm:p-2">
       <span className="text-xs sm:text-sm align-self-start text-white">Saved</span>
-      <ul className="grid grid-cols-1 gap-1.5 sm:gap-3 p-0.5">
+      <ul className="grid grid-cols-1 gap-2 sm:gap-3.5 p-0.5">
         { data && data.map((scan) => (
           <li 
             key={scan.name}
