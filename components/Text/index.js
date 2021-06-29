@@ -3,7 +3,10 @@ import Predictions from "@aws-amplify/predictions"
 import EasyEdit, {Types} from 'react-easy-edit';
 
 export const Text = ({ page, setPage }) => {
-  const save = (value) => {getTranslation(value)}
+  const save = (value) => {
+    if (value === page.text.fullText) { return null }
+    getTranslation(value)
+  }
 
   const getTranslation = (value) => {
     // console.log(value)
