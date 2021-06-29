@@ -6,9 +6,9 @@ export const Previous = ({ page, setPage }) => {
   // console.log('data in Prev component: ', data)
 
   return (
-    <div className="previous overflow-y-scroll p-1">
-      <span className="align-self-start text-white">History</span>
-      <ul className="grid grid-cols-2 gap-3 p-1">
+    <div className="previous overflow-y-scroll p-1 sm:p-2">
+      <span className="text-xs sm:text-sm align-self-start text-white">Saved</span>
+      <ul className="grid grid-cols-1 gap-1.5 sm:gap-3 p-0.5">
         { data && data.map((scan) => (
           <li 
             key={scan.name}
@@ -17,7 +17,7 @@ export const Previous = ({ page, setPage }) => {
                 <img 
                   src={scan.src}
                   style={{width:'80px'}} 
-                  className={`${scan.name == page.name ? "border-red-500" : "border-gray-600"} hover:border-red-500 border-4 border-solid`} />
+                  className={`${scan.name == page.name ? "border-red-500" : "border-gray-600"} hover:border-red-500 border-2 border-solid`} />
                 )
               }
           </li>

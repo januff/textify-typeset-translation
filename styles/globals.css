@@ -49,16 +49,8 @@
   text-shadow: 6px 6px 0px #404040, 7px 7px 0px #404040, 8px 8px 0px #404040, 9px 9px 0px #404040; 
 }
 
-.buttons {
-  @apply row-span-2 col-span-2 flex flex-col justify-between;
-}
-
-button {
-  @apply border-2 border-dashed rounded-xl text-white font-bold py-1 px-2 w-full inline-flex items-center transform transition duration-300 hover:animate-pulse;
-}
-
 .scan {
-  @apply col-span-4 bg-gray-400;
+  @apply col-span-5 bg-gray-400;
   grid-row: span 8 / span 8;
   font-weight: 700;
 }
@@ -69,18 +61,26 @@ button {
 }
 
 .text > * {
-  @apply w-1/2 p-2 rounded-xl text-lg leading-snug tracking-tight bg-gray-100;
+  @apply w-1/2 p-2 rounded-xl text-xs sm:text-lg leading-tight tracking-tight bg-gray-100;
 }
 
 .easy-edit-textarea {
-  @apply w-1/2 p-2 rounded-xl text-lg leading-snug tracking-tight bg-gray-100;
+  @apply w-1/2 p-2 rounded-xl leading-tight tracking-tight bg-gray-100;
   min-height: 180px !important;
   min-width: 330px;
   max-width: 45vw;
 }
 
+.buttons {
+  @apply row-span-3 col-span-1 flex flex-col justify-around;
+}
+
+button {
+  @apply border-2 border-dashed rounded-xl text-white py-1 px-2 w-full inline-flex items-center transform transition duration-300 hover:animate-pulse;
+}
+
 .previous {
-  @apply rounded-xl bg-gray-500 col-span-2 items-center flex flex-col;
-  grid-row: span 6 / span 6;
+  @apply bg-gray-500 col-span-1 items-center flex flex-col;
+  grid-row: span 5 / span 5;
 }
 

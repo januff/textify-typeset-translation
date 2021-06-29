@@ -14,7 +14,7 @@ Amplify.configure({
 })
 Amplify.register(Predictions)
 
-Predictions.addPluggable(new AmazonAIPredictionsProvider())
+// Predictions.addPluggable(new AmazonAIPredictionsProvider())
 
 function MyApp({ Component, pageProps }) {
   
