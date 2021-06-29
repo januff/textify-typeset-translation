@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3050",
     "build": "next build",
     "start": "next start"
   },
@@ -11,9 +11,13 @@
     "@astrajs/collections": "^0.0.14",
     "@aws-amplify/ui-react": "^1.0.7",
     "aws-amplify": "^3.3.27",
+    "axios": "^0.21.1",
     "next": "^10.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-easy-edit": "^1.13.2",
+    "react-query": "^3.17.2",
+    "swr": "^0.5.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
