@@ -77,6 +77,11 @@
   @apply row-span-3 col-span-1 flex flex-col justify-around;
 }
 
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
 button {
   @apply border-2 border-dashed rounded-xl text-white py-1 px-2 w-full inline-flex items-center transform transition duration-300 hover:animate-pulse;
 }
