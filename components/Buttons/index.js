@@ -24,7 +24,9 @@ export const Buttons = ({ page, setPage }) => {
       })
       await Storage.put(file.name, file, { 
         contentType: 'image/jpeg', })
+      
       let src = `https://trans-next-tail-v2-bucket112805-dev.s3.amazonaws.com/public/${file.name}`
+      
       setPage(page => ({ 
         ...page,
         src,
@@ -38,12 +40,25 @@ export const Buttons = ({ page, setPage }) => {
         }
       })
       .then(response => {
-        let text = response.text
         setPage(page => ({ 
           ...page,
-          text, 
-          message: 'Ready For Edits'
+          text: response.text, 
+          message: 'Interpreting...'
         }))
+        Predictions.interpret({
+          text: {
+            source: {
+              text: response.text.fullText
+            },
+            type:"LANGUAGE"
+          }
+        }).then(response => {
+          setPage(page => ({ 
+            ...page,
+            message: 'Ready for Edits',
+            language: response.textInterpretation.language
+          }))
+        })
       })
     } catch(err) {
       setPage(page => ({ 

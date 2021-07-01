@@ -1,0 +1,13 @@
+{
+    "resourceName": "interpretLangTransNextTail",
+    "interpretPolicyName": "interpretPolicy805d198e",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "interpretType": "interpretText",
+    "type": "LANGUAGE",
+    "access": "authAndGuest"
+}

@@ -18,7 +18,7 @@ export const Text = ({ page, setPage }) => {
       translateText: {
         source: {
           text: value,
-          language : "es"
+          language : page.language
         },
         targetLanguage: "en"
       }
@@ -39,11 +39,11 @@ export const Text = ({ page, setPage }) => {
   }
 
   useEffect(() => {
-    if (page.text?.fullText && !page.text?.fullTranslation) {
-      // console.log('Text useffect fired')
+    if (page.text?.fullText && page.language &&!page.text?.fullTranslation) {
+      console.log('translating')
       getTranslation(page.text.fullText)
     }
-  }, [page.text?.fullText])
+  }, [page.text?.fullText, page.language])
 
   return (
     <div className="text p-4 flex bg-gray-400 gap-x-4 overflow-y-hidden overflow-y-scroll">

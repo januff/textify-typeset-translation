@@ -24,6 +24,11 @@
       "providerPlugin": "awscloudformation",
       "service": "Translate",
       "convertType": "translateText"
+    },
+    "interpretLangTransNextTail": {
+      "providerPlugin": "awscloudformation",
+      "service": "Comprehend",
+      "interpretType": "interpretText"
     }
   }
 }

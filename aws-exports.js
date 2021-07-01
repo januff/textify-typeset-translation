@@ -29,6 +29,15 @@ const awsmobile = {
                     "targetLanguage": "en"
                 }
             }
+        },
+        "interpret": {
+            "interpretText": {
+                "region": "us-east-1",
+                "proxy": false,
+                "defaults": {
+                    "type": "LANGUAGE"
+                }
+            }
         }
     }
 };
