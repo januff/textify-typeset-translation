@@ -58,7 +58,7 @@ export const Text = ({ page, setPage }) => {
       <div>{page.text?.fullTranslation ? page.text.fullTranslation : 'Translated Text Goes Here'}</div>
       {page.language && 
         <div className="language fixed text-sm sm:text-lg text-white bottom-0 left-0 p-3 bg-gray-600">
-          <span>{`Detected: ${new Intl.DisplayNames(['en'], {type: 'language'}).of(page.language)}`}
+          <span>{`Detected: ${new Intl.DisplayNames(['en'], {type: 'language', style: 'long'}).of(page.language)}`}
           </span>
         </div>}
     </div>
