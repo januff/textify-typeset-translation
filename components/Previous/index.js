@@ -3,6 +3,7 @@ import { useScans } from "../../hooks";
 
 export const Previous = ({ page, setPage }) => {
   const { data, isLoading, isFetching } = useScans()
+  
   // console.log('data in Prev component: ', data)
 
   return (

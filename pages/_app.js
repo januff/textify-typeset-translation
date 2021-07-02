@@ -1,4 +1,5 @@
 import React from "react";
+import Head from 'next/head'
 import '../styles/globals.css'
 import Amplify from 'aws-amplify'
 import Predictions, { AmazonAIPredictionsProvider } from "@aws-amplify/predictions"
@@ -29,6 +30,9 @@ const [queryClient] = React.useState(() => new QueryClient({
 
 return (
     <QueryClientProvider client={queryClient}>
+      <Head>
+        <meta name="theme-color" content="#404040" />
+      </Head>
       <Hydrate state={pageProps.dehydratedState}>
         <Component {...pageProps} />
       </Hydrate>
