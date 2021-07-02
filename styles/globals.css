@@ -81,7 +81,7 @@ button:disabled {
 }
 
 button {
-  @apply border-2 border-dashed rounded-xl text-white py-1 px-2 w-full inline-flex items-center transform transition duration-300 hover:animate-pulse;
+  @apply border-2 border-dashed rounded-xl text-white py-1 px-2 w-full inline-flex items-center justify-center sm:justify-between transform transition duration-300 hover:animate-pulse;
 }
 
 .previous {
