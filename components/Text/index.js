@@ -55,7 +55,12 @@ export const Text = ({ page, setPage }) => {
         hideCancelButton={true}
         saveOnBlur={true}
         onSave={save} />
-        <div>{page.text?.fullTranslation ? page.text.fullTranslation : 'Translated Text Goes Here'}</div>
+      <div>{page.text?.fullTranslation ? page.text.fullTranslation : 'Translated Text Goes Here'}</div>
+      {page.language && 
+        <div className="language absolute text-sm text-white bottom-2 left-2 p-3 bg-gray-600">
+          <span>{`Detected: ${new Intl.DisplayNames(['en'], {type: 'language'}).of(page.language)}`}
+          </span>
+        </div>}
     </div>
-  )  
+  )
 }
