@@ -38,12 +38,26 @@ export const Text = ({ page, setPage }) => {
     .catch(err => console.log({ err }));
   }
 
+  // If text is untranslated and language is ID'd, translate text.
+
   useEffect(() => {
     if (page.text?.fullText && page.language &&!page.text?.fullTranslation) {
-      console.log('translating')
       getTranslation(page.text.fullText)
     }
   }, [page.text?.fullText, page.language])
+
+  // If language is ID'd, expand language code to full language name.
+
+  useEffect(() => {
+    if (page.language &&!page.fullLanguage) {
+      let full = new Intl.DisplayNames(['en'], {type: 'language', style: 'long'}).of(page.language)
+      setPage(page => ({
+        ...page,
+        fullLanguage: full,
+        message: "Save Edits?"
+      }))
+    }
+  }, [page.language, page.fullLanguage])
 
   return (
     <div className="text p-3 sm:p-4 flex bg-gray-400 gap-x-3 sm:gap-x-5 overflow-y-hidden overflow-y-scroll">
@@ -56,10 +70,9 @@ export const Text = ({ page, setPage }) => {
         saveOnBlur={true}
         onSave={save} />
       <div>{page.text?.fullTranslation ? page.text.fullTranslation : 'Translated Text Goes Here'}</div>
-      {page.language && 
+      {page.fullLanguage && 
         <div className="language fixed text-sm sm:text-lg text-white bottom-0 left-0 p-3 bg-gray-600">
-          <span>{`Detected: ${new Intl.DisplayNames(['en'], {type: 'language', style: 'long'}).of(page.language)}`}
-          </span>
+          <span>Detected: {page.fullLanguage}</span>
         </div>}
     </div>
   )
