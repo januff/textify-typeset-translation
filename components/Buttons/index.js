@@ -126,10 +126,11 @@ export const Buttons = ({ page, setPage }) => {
 
   return (
     <div className="buttons text-xs">
-      <button>
+      {/* <button> */}
+      <button disabled>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFF" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M21.2 15c.7-1.2 1-2.5.7-3.9-.6-2-2.4-3.5-4.4-3.5h-1.2c-.7-3-3.2-5.2-6.2-5.6-3-.3-5.9 1.3-7.3 4-1.2 2.5-1 6.5.5 8.8m8.7-1.6V21"/><path d="M16 16l-4-4-4 4"/></svg>
         <span className="hidden sm:contents sm:pl-2">Scan Image</span>
-        <input onChange={(e) => uploadScan(e.target.files[0])} className="cursor-pointer absolute opacity-0 w-full" type="file" />
+        {/* <input onChange={(e) => uploadScan(e.target.files[0])} className="cursor-pointer absolute opacity-0 w-full" type="file" /> */}
       </button>
       {/* <button onClick={updateScan}> */}
       <button disabled>
