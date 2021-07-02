@@ -31,12 +31,12 @@ export const Scan = ({ page, setPage}) => {
         <>
           <img 
             src={ page.src }
-            className="relative max-w-xs sm:max-w-md md:max-w-lg"
+            className="relative max-w-xs sm:max-w-lg"
             style={{  
               boxShadow:'0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12)'
             }}/>
           <svg 
-            className="absolute max-w-xs sm:max-w-md md:max-w-lg"
+            className="absolute max-w-xs sm:max-w-lg"
             preserveAspectRatio="xMidYMid meet"
             viewBox={`0 0 ${page.width} ${page.height}`}>
             {/* <image
@@ -73,7 +73,7 @@ export const Scan = ({ page, setPage}) => {
         </>
       }
       { page.message && (
-        <span className="absolute text-xs italic bg-gray-300 p-2 self-end">{page.message}</span>
+        <span className="message absolute text-xs italic bg-gray-300 p-2 self-end">{page.message}</span>
       )}
     </div>  
   )  

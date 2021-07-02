@@ -55,6 +55,11 @@
   font-weight: 700;
 }
 
+.scan > *:not(.message) {
+  /* max-width: 50vh; */
+  /* max-height: 46vh; */
+}
+
 .text {
   @apply col-span-6;
   grid-row: span 5 / span 5;
