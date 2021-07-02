@@ -46,7 +46,7 @@ export const Text = ({ page, setPage }) => {
   }, [page.text?.fullText, page.language])
 
   return (
-    <div className="text p-4 flex bg-gray-400 gap-x-4 overflow-y-hidden overflow-y-scroll">
+    <div className="text p-3 sm:p-4 flex bg-gray-400 gap-x-3 sm:gap-x-5 overflow-y-hidden overflow-y-scroll">
       <EasyEdit
         type={Types.TEXTAREA}
         value={page.text?.fullText ? page.text.fullText : 'Extracted Text Goes Here'}
@@ -57,7 +57,7 @@ export const Text = ({ page, setPage }) => {
         onSave={save} />
       <div>{page.text?.fullTranslation ? page.text.fullTranslation : 'Translated Text Goes Here'}</div>
       {page.language && 
-        <div className="language absolute text-sm text-white bottom-2 left-2 p-3 bg-gray-600">
+        <div className="language fixed text-sm sm:text-lg text-white bottom-0 left-0 p-3 bg-gray-600">
           <span>{`Detected: ${new Intl.DisplayNames(['en'], {type: 'language'}).of(page.language)}`}
           </span>
         </div>}
