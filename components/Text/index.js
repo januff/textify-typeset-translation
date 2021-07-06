@@ -76,8 +76,8 @@ export const Text = ({ page, lang, setPage, setLang }) => {
         onSave={save} />
       <div>{page.text?.fullTranslation ? page.text.fullTranslation : 'Translated Text Goes Here'}</div>
       {page.fullLanguage && 
-        <div className="language fixed text-white bottom-0 left-0 w-full flex justify-between">
-          <span className="text-sm sm:text-lg  bg-gray-700 align-middle p-5">Detected: {page.fullLanguage}</span>
+        <div className="language fixed text-white bottom-0 left-0 w-full flex items-center justify-between">
+          <span className="text-xs sm:text-sm bg-gray-700 p-3">Detected: {page.fullLanguage}</span>
           <span className="cursor-pointer text-xs bg-gray-700 p-3 m-3 border-2 border-dashed rounded-xl" onClick={langToggler}>View {lang ? 'All Languages' : `${page.fullLanguage} Only`}</span>
         </div>}
     </div>
