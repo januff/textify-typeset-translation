@@ -15,7 +15,7 @@ Amplify.configure({
 })
 Amplify.register(Predictions)
 
-Predictions.addPluggable(new AmazonAIPredictionsProvider())
+// Predictions.addPluggable(new AmazonAIPredictionsProvider())
 
 function MyApp({ Component, pageProps }) {
   
@@ -31,6 +31,9 @@ const [queryClient] = React.useState(() => new QueryClient({
 return (
     <QueryClientProvider client={queryClient}>
       <Head>
+        <title>Textify // Typeset Translation</title>
+        <meta property="og:title" content="TEXTIFY" key="ogtitle" />
++       <meta property="og:description" content="Comic translation using Next.js, AWS, and Apache Cassandra." key="ogdesc" />
         <meta name="theme-color" content="#404040" />
       </Head>
       <Hydrate state={pageProps.dehydratedState}>

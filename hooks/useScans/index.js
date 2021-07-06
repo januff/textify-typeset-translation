@@ -1,14 +1,14 @@
 import axios from "axios"
 import { useQuery, queryClient } from "react-query"
 
-const getScans = async () => {
-  const { data } = await axios.get('/api/read/pages')
+const getScans = async (lang) => {
+  const { data } = await axios.get(`/api/read/pages?lang=${lang}`)
   const array = Object.values(data) 
   return array
 }
 
-const useScans = () => {
-  return useQuery(['scans'], getScans)
+const useScans = (lang = '') => {
+  return useQuery(['scans', lang], () => getScans(lang))
 }
 
 export { useScans, getScans }

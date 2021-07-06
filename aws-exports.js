@@ -25,7 +25,7 @@ const awsmobile = {
                 "region": "us-east-1",
                 "proxy": false,
                 "defaults": {
-                    "sourceLanguage": "id",
+                    "sourceLanguage": "auto",
                     "targetLanguage": "en"
                 }
             }

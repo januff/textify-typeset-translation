@@ -1,16 +1,9 @@
-import React, { useEffect } from 'react'
-import { useScans } from "../../hooks";
-
-export const Previous = ({ page, setPage }) => {
-  const { data, isLoading, isFetching } = useScans()
-  
-  // console.log('data in Prev component: ', data)
-
+export const Previous = ({ scans, page, setPage }) => {
   return (
     <div className="previous overflow-y-scroll p-1 sm:p-2">
-      <span className="text-xs sm:text-sm align-self-start text-white">Saved</span>
+      <span className="bg-gray-700 p-1 px-2 mb-1 rounded-lg text-xs sm:text-sm align-self-start text-white">Saved</span>
       <ul className="grid grid-cols-1 gap-2 sm:gap-3.5 p-0.5">
-        { data && data.map((scan) => (
+        { scans && scans.map((scan) => (
           <li 
             key={scan.name}
             onClick={() => setPage({...scan})}>

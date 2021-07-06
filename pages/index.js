@@ -9,6 +9,8 @@ const Home = () => {
     message: 'Choose or Upload Image',
     saved: false
   })
+  const [ lang, setLang ] = useState('')
+  const { data: scans, isLoading, isFetching } = useScans(lang)
 
   return (
     <div className="home-container">
@@ -21,11 +23,15 @@ const Home = () => {
           page={ page }
           setPage={ setPage } />
         <Previous 
-          page={ page } 
+          scans={ scans } 
+          page={ page }
+          lang={ lang } 
           setPage={ setPage } />
         <Text 
           page={ page }
-          setPage={ setPage } />
+          lang={ lang }
+          setPage={ setPage }
+          setLang={ setLang } />
       </div>
     </div>
   )
@@ -34,14 +40,19 @@ const Home = () => {
 export async function getStaticProps() {
   const queryClient = new QueryClient()
   // const scans = await getScans()
-  // console.log('scans from getScans from getStaticProps: ', scans)
+  // console.log('scans from getScans from getServerSideProps: ', scans)
   
-  // queryClient.setQueryData('scans', scans)
+  // await queryClient.setQueryData('scans', () => getScans())
 
   // Object.keys(scans).forEach(key => {
   //   console.log('scans[key] ', scans[key])
   //   queryClient.setQueryData(['scan', key], scans[key])
   // })
+
+//  scans.map(scan => {
+//     console.log('scan.name ', scan.name)
+//     queryClient.setQueryData(['scan', scan.name], scan)
+//   })
 
   
   return {

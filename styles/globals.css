@@ -57,7 +57,7 @@
 
 .scan > *:not(.message) {
   /* max-width: 50vh; */
-  /* max-height: 46vh; */
+  max-height: 50vh;
 }
 
 .text {

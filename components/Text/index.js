@@ -2,7 +2,12 @@ import React, { useEffect } from "react"
 import Predictions from "@aws-amplify/predictions"
 import EasyEdit, {Types} from 'react-easy-edit';
 
-export const Text = ({ page, setPage }) => {
+export const Text = ({ page, lang, setPage, setLang }) => {
+
+  const langToggler = () => {
+    lang ? setLang('') : setLang(page.language)
+  }
+
   const save = (value) => {
     if (value === page.text.fullText) { return null }
     getTranslation(value)
@@ -18,7 +23,7 @@ export const Text = ({ page, setPage }) => {
       translateText: {
         source: {
           text: value,
-          language : page.language
+          language: page.language
         },
         targetLanguage: "en"
       }
@@ -60,7 +65,7 @@ export const Text = ({ page, setPage }) => {
   }, [page.language, page.fullLanguage])
 
   return (
-    <div className="text p-3 sm:p-4 flex bg-gray-400 gap-x-3 sm:gap-x-5 overflow-y-hidden overflow-y-scroll">
+    <div className="text p-3 sm:p-4 flex bg-gray-400 gap-x-3 sm:gap-x-5 overflow-y-scroll">
       <EasyEdit
         type={Types.TEXTAREA}
         value={page.text?.fullText ? page.text.fullText : 'Extracted Text Goes Here'}
@@ -71,8 +76,9 @@ export const Text = ({ page, setPage }) => {
         onSave={save} />
       <div>{page.text?.fullTranslation ? page.text.fullTranslation : 'Translated Text Goes Here'}</div>
       {page.fullLanguage && 
-        <div className="language fixed text-sm sm:text-lg text-white bottom-0 left-0 p-3 bg-gray-600">
-          <span>Detected: {page.fullLanguage}</span>
+        <div className="language fixed text-white bottom-0 left-0 w-full flex justify-between">
+          <span className="text-sm sm:text-lg  bg-gray-700 align-middle p-5">Detected: {page.fullLanguage}</span>
+          <span className="cursor-pointer text-xs bg-gray-700 p-3 m-3 border-2 border-dashed rounded-xl" onClick={langToggler}>View {lang ? 'All Languages' : `${page.fullLanguage} Only`}</span>
         </div>}
     </div>
   )

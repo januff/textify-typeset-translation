@@ -8,11 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "@astrajs/collections": "^0.0.14",
+    "@astrajs/collections": "^0.1.0",
     "@aws-amplify/ui-react": "^1.0.7",
-    "aws-amplify": "^3.3.27",
+    "aws-amplify": "^4.1.2",
     "axios": "^0.21.1",
-    "next": "^10.2.0",
+    "next": "^11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-easy-edit": "^1.13.2",
