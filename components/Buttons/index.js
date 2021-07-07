@@ -131,13 +131,13 @@ export const Buttons = ({ page, setPage }) => {
         <span className="hidden sm:contents sm:pl-2">Scan Image</span>
         <input onChange={(e) => uploadScan(e.target.files[0])} className="cursor-pointer absolute opacity-0 w-full" type="file" />
       </button>
-      <button onClick={updateScan}>
-      {/* <button disabled> */}
+      {/* <button onClick={updateScan}> */}
+      <button disabled>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFF" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
         <span className="hidden sm:contents sm:pl-2">Save Edits</span>
       </button>
-      <button onClick={deleteScan}>
-      {/* <button disabled> */}
+      {/* <button onClick={deleteScan}> */}
+      <button disabled>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFF" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
         <span className="hidden sm:contents sm:pl-2">Delete Scan</span>
       </button>
