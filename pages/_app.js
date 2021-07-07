@@ -5,6 +5,8 @@ import Amplify from 'aws-amplify'
 import Predictions, { AmazonAIPredictionsProvider } from "@aws-amplify/predictions"
 import config from '../aws-exports'
 
+// The Hydration code below is taken from the nextjs example in the react-query repo. No idea what it's doing.
+
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { Hydrate } from 'react-query/hydration'
 import { ReactQueryDevtools } from 'react-query/devtools'
@@ -15,7 +17,10 @@ Amplify.configure({
 })
 Amplify.register(Predictions)
 
-// Predictions.addPluggable(new AmazonAIPredictionsProvider())
+// "Error: Pluggable with name AmazonAIPredictionsProvider has already been added."
+// Comment out the following line if refreshing the browser yields error above. Hot-reloading by Next makes full browser refreshes mostly unnecessary; for development tasks that require it, I found it easier to just leave this commented out.
+
+Predictions.addPluggable(new AmazonAIPredictionsProvider())
 
 function MyApp({ Component, pageProps }) {
   

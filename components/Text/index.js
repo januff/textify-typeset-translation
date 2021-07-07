@@ -78,7 +78,7 @@ export const Text = ({ page, lang, setPage, setLang }) => {
       {page.fullLanguage && 
         <div className="language fixed text-white bottom-0 left-0 w-full flex items-center justify-between">
           <span className="text-xs sm:text-sm bg-gray-700 p-3">Detected: {page.fullLanguage}</span>
-          <span className="cursor-pointer text-xs bg-gray-700 p-3 m-3 border-2 border-dashed rounded-xl" onClick={langToggler}>View {lang ? 'All Languages' : `${page.fullLanguage} Only`}</span>
+          <span className="cursor-pointer text-xs bg-gray-700 p-3 m-3 border-2 border-dashed rounded-xl" onClick={langToggler}>{lang ? 'View All Languages' : `${page.fullLanguage} Scans Only`}</span>
         </div>}
     </div>
   )
