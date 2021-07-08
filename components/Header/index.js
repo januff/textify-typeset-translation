@@ -1,9 +1,12 @@
 import React from 'react'
 
-export const Header = () => {
+export const Header = ({ setPage }) => {
   return (
-    <div className="header text-gray-900 py-2 text-4xl sm:text-5xl leading-none">
-      <span>
+    <div className="header cursor-pointer text-gray-900 py-2 text-4xl sm:text-5xl leading-none">
+      <span onClick={() => setPage({ 
+        message: 'Choose or Upload Image',
+        saved: false
+      })}>
         TEXTIFY
       </span>
       <span>

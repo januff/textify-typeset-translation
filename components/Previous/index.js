@@ -11,7 +11,7 @@ export const Previous = ({ scans, page, setPage }) => {
                 <img 
                   src={scan.src}
                   style={{width:'80px'}} 
-                  className={`${scan.name == page.name ? "border-red-500" : "border-gray-600"} hover:border-red-500 border-2 border-solid`} />
+                  className={`${scan.name == page.name ? "border-red-500" : "border-gray-600 cursor-pointer"} hover:border-red-500 border-4 border-solid`} />
                 )
               }
           </li>

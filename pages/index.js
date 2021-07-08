@@ -15,7 +15,8 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="home-grid">
-        <Header />
+        <Header 
+          setPage={ setPage } />
         <Scan 
           page={ page } 
           setPage={ setPage } />
