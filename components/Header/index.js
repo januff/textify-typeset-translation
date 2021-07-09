@@ -11,9 +11,11 @@ export const Header = ({ setPage }) => {
         TEXTIFY
       </span>
       <span 
-        className="text-yellow-500 text-xs lg:text-md text-right
-                  w-2/5 h-full leading-none p-2 
-                  flex justify-center items-center italic">
+        className="text-yellow-500 text-xs lg:text-md text-right w-2/5 h-full leading-none p-2 flex justify-center items-center italic"
+        onClick={() => setPage({ 
+          message: 'Choose or Upload Image',
+          saved: false
+        })}>
         KEYWORDS: CLOUD ML, HUMAN-IN-THE-LOOP WORKFLOWS, SERVERLESS EVERYTHING
       </span>
       <span>
