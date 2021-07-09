@@ -20,7 +20,7 @@ Amplify.register(Predictions)
 // "Error: Pluggable with name AmazonAIPredictionsProvider has already been added."
 // Comment out the following line if refreshing the browser yields error above. Hot-reloading by Next makes full browser refreshes mostly unnecessary; for development tasks that require it, I found it easier to just leave this commented out.
 
-Predictions.addPluggable(new AmazonAIPredictionsProvider())
+// Predictions.addPluggable(new AmazonAIPredictionsProvider())
 
 function MyApp({ Component, pageProps }) {
   

@@ -44,9 +44,12 @@
 
 .header {
   @apply col-span-6 flex justify-between items-center;
+}
+
+.logo {
   font-family: 'Midnight Snack';
   color: #D3D3D3;
-  text-shadow: 6px 6px 0px #404040, 7px 7px 0px #404040, 8px 8px 0px #404040, 9px 9px 0px #404040; 
+  text-shadow: 6px 6px 0px #404040, 7px 7px 0px #404040, 8px 8px 0px #404040, 9px 9px 0px #404040;
 }
 
 .scan {
