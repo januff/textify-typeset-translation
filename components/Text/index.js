@@ -9,7 +9,7 @@ export const Text = ({ page, lang, setPage, setLang }) => {
   }
 
   const save = (value) => {
-    if (value === page.text.fullText) { return null }
+    if (value === page.text?.fullText || value === 'Extracted Text Goes Here' ) { return null }
     getTranslation(value)
   }
 
@@ -68,13 +68,13 @@ export const Text = ({ page, lang, setPage, setLang }) => {
     <div className="text p-3 sm:p-4 flex bg-gray-400 gap-x-3 sm:gap-x-5 overflow-y-scroll">
       <EasyEdit
         type={Types.TEXTAREA}
-        value={page.text?.fullText ? page.text.fullText : 'Extracted Text Goes Here'}
+        value={page.text?.fullText ? page.text?.fullText : 'Extracted Text Goes Here'}
         buttonsPosition="before"
         hideSaveButton={true}
         hideCancelButton={true}
         saveOnBlur={true}
         onSave={save} />
-      <div>{page.text?.fullTranslation ? page.text.fullTranslation : 'Translated Text Goes Here'}</div>
+      <div>{page.text?.fullTranslation ? page.text?.fullTranslation : 'Translated Text Goes Here'}</div>
       {page.fullLanguage && 
         <div className="language fixed text-white bottom-0 left-0 w-full flex items-center justify-between">
           <span className="text-xs sm:text-sm bg-gray-700 p-3 self-end">Detected: {page.fullLanguage}</span>
