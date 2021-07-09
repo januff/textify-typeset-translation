@@ -27,13 +27,14 @@ export const Scan = ({ page, setPage}) => {
   }, [page.src]);
 
   return (
-    <div className="scan flex justify-center items-center">
+    <div 
+      className="scan flex justify-center items-center">
       {
         !page.src &&
-          <div className="intro text-xs text-yellow-500 text-right w-4/5 h-4/5 bg-gray-800 flex justify-end items-start p-5" style={{  
+          <div className="intro text-yellow-500 text-right w-4/5 h-4/5 bg-gray-800 flex justify-end items-start p-5" style={{  
             boxShadow:'0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12)'
           }}>
-            <div className="headlines text-sm">
+            <div className="headlines leading-loose text-xs">
               <span className="text-lg italic">BUILT WITH</span><br></br> 
               NEXT.JS <img className="inline-block" width="20" height="20" src="/images/next-js.svg" /><br></br>
               React-Query <img className="inline-block" width="20" height="20" src="/images/react-query.svg" /><br></br>
