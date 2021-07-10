@@ -47,7 +47,7 @@ return (
           key="ogdesc" />
         <meta 
           property="og:image"
-          content="/images/tools-screengrab.png"
+          content="/images/gl-screengrab.jpg"
           key="ogimage" />
         <meta 
           name="theme-color" 
