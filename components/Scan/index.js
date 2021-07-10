@@ -43,7 +43,7 @@ export const Scan = ({ page, setPage}) => {
               React-Easy-Edit <img className="inline-block" width="16" height="16" src="/images/edit.svg" /><br></br> 
               TailwindCSS <img className="inline-block" width="20" height="20" src="/images/tailwindcss.svg" /><br></br> 
             </div>
-            <div className="text-gray-200 text-xs sm:text-sm self-end justify-self-start absolute w-1/3">
+            <div className="text-gray-200 text-xs sm:text-sm self-end justify-self-start absolute w-2/5 md:w-1/3">
               A translation tool for the global comic book multiverse, as chronicled on Medium. <img className="inline-block" width="12" height="12" style={{filter: 'invert(1)'}} src="/images/medium.png" /> Ready-to-clone at Github. <img className="inline-block" width="12" height="12" src="/images/github.svg" />
             </div>
           </div>
