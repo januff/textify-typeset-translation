@@ -28,6 +28,10 @@ export const Scan = ({ page, setPage}) => {
 
   return (
     <div 
+      onClick={() => setPage({ 
+        message: 'Choose or Upload Image',
+        saved: false
+      })}
       className="scan flex justify-center items-center">
       {
         !page.src &&
@@ -59,6 +63,7 @@ export const Scan = ({ page, setPage}) => {
           <svg 
             className="absolute max-w-xs sm:max-w-lg"
             preserveAspectRatio="xMidYMid meet"
+            onClick={(e) => e.stopPropagation()}
             viewBox={`0 0 ${page.width} ${page.height}`}>
             {/* <image
               width={ page.width }
