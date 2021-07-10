@@ -34,7 +34,7 @@ export const Scan = ({ page, setPage}) => {
           <div className="intro text-yellow-500 text-right w-4/5 h-4/5 bg-gray-800 flex justify-end items-start p-5" style={{  
             boxShadow:'0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12)'
           }}>
-            <div className="headlines leading-loose text-xs">
+            <div className="toolkit leading-loose text-xs">
               <span className="text-lg italic">BUILT WITH</span><br></br> 
               NEXT.JS <img className="inline-block" width="20" height="20" src="/images/next-js.svg" /><br></br>
               React-Query <img className="inline-block" width="20" height="20" src="/images/react-query.svg" /><br></br>
@@ -42,6 +42,9 @@ export const Scan = ({ page, setPage}) => {
               Apache Cassandra <img className="inline-block" width="20" height="20" src="/images/cassandra-color.svg" /><br></br>
               React-Easy-Edit <img className="inline-block" width="16" height="16" src="/images/edit.svg" /><br></br> 
               TailwindCSS <img className="inline-block" width="20" height="20" src="/images/tailwindcss.svg" /><br></br> 
+            </div>
+            <div className="text-gray-200 text-sm self-end justify-self-start absolute w-1/2">
+              A translation tool for the global comic book multiverse, as chronicled on Medium. <img className="inline-block" width="16" height="16" style={{filter: 'invert(1)'}} src="/images/medium.png" /> Ready-to-clone at Github. <img className="inline-block" width="16" height="16" src="/images/github.svg" />
             </div>
           </div>
       }
