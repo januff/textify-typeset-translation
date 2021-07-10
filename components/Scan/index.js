@@ -44,7 +44,7 @@ export const Scan = ({ page, setPage}) => {
               TailwindCSS <img className="inline-block" width="20" height="20" src="/images/tailwindcss.svg" /><br></br> 
             </div>
             <div className="text-gray-200 text-xs sm:text-sm self-end justify-self-start absolute w-2/5 md:w-1/3">
-              A translation tool for the global comic book multiverse, as chronicled on Medium. <img className="inline-block" width="12" height="12" style={{filter: 'invert(1)'}} src="/images/medium.png" /> Ready-to-clone at Github. <img className="inline-block" width="12" height="12" src="/images/github.svg" />
+              A translation tool for the global comic book multiverse, as <a className=" text-yellow-500 italic" href="https://joeyanuff-33180.medium.com/" target="_blank">tutorialized on Medium</a>. <a href="https://joeyanuff-33180.medium.com/" target="_blank"><img className="inline-block" width="12" height="12" style={{filter: 'invert(1)'}} src="/images/medium.png" /></a> Ready-to-clone at Github. <a href="https://github.com/januff/textify-typeset-translation" target="_blank"><img className="inline-block" width="12" height="12" src="/images/github.svg" /></a>
             </div>
           </div>
       }
