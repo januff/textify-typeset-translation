@@ -37,9 +37,21 @@ return (
     <QueryClientProvider client={queryClient}>
       <Head>
         <title>Textify // Typeset Translation</title>
-        <meta property="og:title" content="TEXTIFY" key="ogtitle" />
-+       <meta property="og:description" content="Comic translation demo using Next.js, AWS, and Apache Cassandra." key="ogdesc" />
-        <meta name="theme-color" content="#404040" />
+        <meta 
+          property="og:title" 
+          content="Textify // Typeset Translation" 
+          key="ogtitle" />
++       <meta 
+          property="og:description" 
+          content="A translation tool for international comics, as tutorialized on Medium." 
+          key="ogdesc" />
+        <meta 
+          property="og:image"
+          content="/images/tools-screengrab.png"
+          key="ogimage" />
+        <meta 
+          name="theme-color" 
+          content="#404040" />
       </Head>
       <Hydrate state={pageProps.dehydratedState}>
         <Component {...pageProps} />
