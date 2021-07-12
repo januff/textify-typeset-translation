@@ -1,5 +1,4 @@
 import React, { useEffect } from "react"
-import Image from 'next/image'
 import { useScan } from "../../hooks";
 
 export const Scan = ({ page, setPage}) => {
@@ -9,14 +8,16 @@ export const Scan = ({ page, setPage}) => {
 
   const getDimensions = () => {
     var img = new Image();
-    img.src = page.src
-    img.onload = () =>  {  
-      setPage(page => ({
-        ...page,
-        width: img.width,
-        height: img.height,
-        message: 'Save Edits?'
-      }))
+    if (page.src) {
+      img.src = page.src
+      img.onload = () =>  {  
+        setPage(page => ({
+          ...page,
+          width: img.width,
+          height: img.height,
+          message: 'Save Edits?'
+        }))
+      }
     }
   }
 
