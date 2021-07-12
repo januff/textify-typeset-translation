@@ -16,9 +16,10 @@ Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, basical
 - Tailwind CSS
 - react-easy-edit
 
-### Medium Essays
-
-  <img width="360" src="./public/images/indo-stacks.png"/>
+### My Medium-length Explanations 
+  <div style="text-align:center">
+    <img width="360" src="./public/images/indo-stacks.png"/>
+  </div>
 
 - [The Multiverse Next Door (Feb 2021)](https://joeyanuff-33180.medium.com/the-multiverse-next-door-444477bdaf63): **Digging the global comics underground with cloud APIs & JavaScript**
 
