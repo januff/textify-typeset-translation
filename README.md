@@ -10,19 +10,20 @@ Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essenti
 
 ### The Cloud ML functions
 
-- Storage.put
-- Predictions.identify
-- Predictions.interpret
+- **Storage.put** (in components/Buttons)
+- **Predictions.interpret** (IDs language)
+- **Predictions.identify** (IDs text)
+- **Predictions.convert** (translates, in components/Text)
 
 ### The CRUD functions
-- Next.js api routes
-- astraClient.collection
-- react-query hooks
+- **Next.js api routes** (see pages/api)
+- **astraClient.collection** (takes route params)
+- **react-query hooks** (hooks folder & components/Buttons; useDelete & useUpdate not used yet.)
 
 ### New Libraries I'm Trying
 
-- Tailwind CSS
-- react-easy-edit
+- **TailwindCSS** (in global.css, all components) 
+- **react-easy-edit** (see components/Text)
 
 
 ### Medium-Length Explainers ###
