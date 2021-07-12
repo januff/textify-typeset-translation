@@ -1,10 +1,14 @@
-Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essentially–inspired by my recent preoccupation with international comics collecting.
-
   <p align="center">
-    <img width="360" src="./public/images/indo-stacks.png"/>
+    <img width="360" src="./public/images/gl-screengrab.jpg"/>
   </p>
 
+Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essentially–inspired by my recent preoccupation with international comics collecting.
+
 - [The Multiverse Next Door (Feb 2021)](https://joeyanuff-33180.medium.com/the-multiverse-next-door-444477bdaf63): **Digging the global comics underground with cloud APIs & JavaScript**
+
+  <p align="center">
+    <img width="240" src="./public/images/indo-stacks.png"/>
+  </p>
 
   > This project thus has dual goals: to introduce some crazy new archaeology to comics fandom, and to scaffold a simple tool for deciphering it, narrowly designed for personal, non-commercial use.
 
