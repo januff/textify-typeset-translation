@@ -17,13 +17,13 @@ Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essenti
 
 ### The CRUD functions
 - **Next.js api routes** (see [pages/api](pages/api/))
-- **astraClient.collection** (takes route params)
-- **react-query hooks** (hooks folder & components/Buttons; useDelete & useUpdate not used yet.)
+- **astraClient.collection** ([using route params](/pages/api/create/[collectionName]/index.js))
+- **react-query hooks** ([hooks folder](hooks/) & [components/Buttons](components/Buttons/index.js); useDelete & useUpdate not used yet.)
 
 ### New Libraries I'm Trying
 
-- **TailwindCSS** (in global.css, all components) 
-- **react-easy-edit** (see components/Text)
+- **TailwindCSS** (in [global.css](styles/global.css) & most components) 
+- **react-easy-edit** (see [components/Text](components/Text/index.js))
 
 
 ### Medium-Length Explainers ###
