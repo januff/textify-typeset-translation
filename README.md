@@ -8,14 +8,14 @@
   <img width="360" src="./public/images/spidermen-b.jpg"/>
 </p>
 
-### The Cloud ML functions
+### AWS Amplify functions
 
 - **Storage.put** (in [components/Buttons](components/Buttons/index.js))
 - **Predictions.interpret** (IDs language)
 - **Predictions.identify** (IDs text)
 - **Predictions.convert** (translates, in [components/Text](components/Text/index.js))
 
-### The CRUD functions
+### Serverless CRUD functions
 - **Next.js api routes** (see [pages/api](pages/api/))
 - **astraClient.collection** ([using route params](/pages/api/create/[collectionName]/index.js))
 - **react-query hooks** ([hooks folder](hooks/) & [components/Buttons](components/Buttons/index.js); useDelete & useUpdate not used yet.)
