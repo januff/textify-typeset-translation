@@ -2,10 +2,10 @@
     <img width="460" src="./public/images/gl-screengrab.jpg"/>
   </p>
 
-Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essentially–inspired by my growing enchantment with the global comics corpus, particularly the unauthorized stuff.
+Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essentially–inspired by my growing enchantment with international comics corpora, particularly Indonesia's unofficial (and still largely uncharted) branching of the Marvel and DC Universes in the late 1960s.
 
 <p align="center">
-  <img width="460" src="./public/images/indo-stacks.png"/>
+  <img width="360" src="./public/images/spidermen.jpg"/>
 </p>
 
 ### The Cloud ML functions
@@ -25,8 +25,11 @@ Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essenti
 - **TailwindCSS** (in [global.css](styles/globals.css) & most components) 
 - **react-easy-edit** (see [components/Text](components/Text/index.js))
 
-
 ### Medium-Length Explainers ###
+<p align="center">
+  <img width="460" src="./public/images/indo-stacks.png"/>
+</p>
+
 
 - [The Multiverse Next Door (Feb 2021)](https://joeyanuff-33180.medium.com/the-multiverse-next-door-444477bdaf63): **Digging the global comics underground with cloud APIs & JavaScript**
 
