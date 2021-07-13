@@ -10,7 +10,7 @@ Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essenti
 
 ### The Cloud ML functions
 
-- **Storage.put** (in components/Buttons)
+- **Storage.put** (in [components/Buttons](components/Buttons/index.js))
 - **Predictions.interpret** (IDs language)
 - **Predictions.identify** (IDs text)
 - **Predictions.convert** (translates, in components/Text)
