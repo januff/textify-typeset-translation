@@ -8,19 +8,19 @@
   <img width="360" src="./public/images/spidermen-b.jpg"/>
 </p>
 
-### AWS Amplify functions
+### The Cloud ML functions
 
 - **Storage.put** (in [components/Buttons](components/Buttons/index.js))
 - **Predictions.interpret** (IDs language)
 - **Predictions.identify** (IDs text)
 - **Predictions.convert** (translates, in [components/Text](components/Text/index.js))
 
-### Serverless CRUD functions
+### The CRUD functions
 - **Next.js api routes** (see [pages/api](pages/api/))
 - **astraClient.collection** ([using route params](/pages/api/create/[collectionName]/index.js))
 - **react-query hooks** ([hooks folder](hooks/) & [components/Buttons](components/Buttons/index.js); useDelete & useUpdate not used yet.)
 
-### New Libraries I'm Trying
+### New Libraries I Tried
 
 - **TailwindCSS** (in [global.css](styles/globals.css) & most components) 
 - **react-easy-edit** (see [components/Text](components/Text/index.js))
