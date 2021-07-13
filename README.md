@@ -22,7 +22,7 @@ Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essenti
 
 ### New Libraries I'm Trying
 
-- **TailwindCSS** (in [global.css](styles/global.css) & most components) 
+- **TailwindCSS** (in [global.css](styles/globals.css) & most components) 
 - **react-easy-edit** (see [components/Text](components/Text/index.js))
 
 
