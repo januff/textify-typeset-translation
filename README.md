@@ -5,7 +5,7 @@
 Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essentially–inspired by my growing enchantment with international comics corpora, particularly Indonesia's unofficial (and still largely uncharted) branching of the Marvel and DC Universes in the late 1960s.
 
 <p align="center">
-  <img width="360" src="./public/images/spidermen.jpg"/>
+  <img width="360" src="./public/images/spidermen-b.jpg"/>
 </p>
 
 ### The Cloud ML functions
