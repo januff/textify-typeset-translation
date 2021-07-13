@@ -50,6 +50,6 @@ Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essenti
 
 ### Essential Tutorials
 
-- [I built a Tik Tok App in React (with REAL database) (Dec 2020)](https://youtu.be/IATOicvih5A) I adapted the app architecture from Ania Kubow's demo here; consulted the [project's repo](https://github.com/kubowania/stargate-tik-tok) often.
+- [I built a Tik Tok App in React (with REAL database) (Dec 2020)](https://youtu.be/IATOicvih5A) I adapted the app architecture from Ania Kubow's demo here & consulted the [project's repo](https://github.com/kubowania/stargate-tik-tok) often.
 
 - [How to use a Serverless Database with Serverless Functions (simple!) (Mar 2021)](https://youtu.be/4JK1XmqLqnw) Kubow's Netlify-Cassandra walkthrough here motivated my serverless survey. 
