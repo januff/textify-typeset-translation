@@ -25,7 +25,7 @@ Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essenti
 - **TailwindCSS** (in [global.css](styles/globals.css) & most components) 
 - **react-easy-edit** (see [components/Text](components/Text/index.js))
 
-### Medium-Length Explainers ###
+### Medium Explainers ###
 <p align="center">
   <img width="460" src="./public/images/indo-stacks.png"/>
 </p>
@@ -48,8 +48,8 @@ Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essenti
 
   > Changes on the detail page are reflected instantly–and reverted if they fail–using the Optimistic Update strategy. With React Query’s devtools drawer open, we have perfect visibility into the state of our cache.
 
-### Crucial Tutorials
+### Essential Tutorials
 
-- [I built a Tik Tok App in React (with REAL database) (Dec 2020)](https://youtu.be/IATOicvih5A) I adapted the app architecture from Ania Kubow's demo here; consulted the project's repo often.
+- [I built a Tik Tok App in React (with REAL database) (Dec 2020)](https://youtu.be/IATOicvih5A) I adapted the app architecture from Ania Kubow's demo here; consulted the [project's repo](https://github.com/kubowania/stargate-tik-tok) often.
 
 - [How to use a Serverless Database with Serverless Functions (simple!) (Mar 2021)](https://youtu.be/4JK1XmqLqnw) Kubow's Netlify-Cassandra walkthrough here motivated my serverless survey. 
