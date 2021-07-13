@@ -2,7 +2,7 @@
     <img width="460" src="./public/images/gl-screengrab.jpg"/>
   </p>
 
-Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essentially–inspired by my recent fascination with international comics collecting.
+Textify is a rudimentary scanlation editor–a CRUD with cloud ML hooks, essentially–inspired by my growing enchantment with the still-uncharted global comics corpus.
 
 <p align="center">
   <img width="460" src="./public/images/indo-stacks.png"/>
