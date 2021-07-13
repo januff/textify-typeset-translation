@@ -43,7 +43,7 @@ return (
           key="ogtitle" />
 +       <meta 
           property="og:description" 
-          content="An open source translation editor designed for international comics, as tutorialized on Medium. Ready-to-clone at GitHub." 
+          content="A translation tool for international comics, as tutorialized on Medium." 
           key="ogdesc" />
         <meta 
           property="og:image"
