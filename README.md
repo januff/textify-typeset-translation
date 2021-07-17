@@ -2,7 +2,7 @@
     <img width="460" src="./public/images/gl-screengrab.jpg"/>
   </p>
 
-**Textify** is a rudimentary scanlation editor–a CRUD with cloud ML hooks–inspired by my growing enchantment with international comics corpora, particularly Indonesia's unofficial (and still largely uncharted) branching of the Marvel and DC Universes in the late 1960s and '70s.
+**Textify** is a simple scanlation editor–a CRUD with cloud ML hooks–inspired by my growing enchantment with international comics corpora, particularly Indonesia's unofficial (and still largely uncharted) branching of the Marvel and DC Universes in the late 1960s and '70s.
 
 <p align="center">
   <img width="360" src="./public/images/spidermen-b.jpg"/>
@@ -17,7 +17,7 @@
 
 ### The CRUD functions
 - **Next.js api routes** (see [pages/api](pages/api/))
-- **astraClient.collection** ([using route params](/pages/api/create/[collectionName]/index.js))
+- **astraClient.collection** ([receives route params](/pages/api/create/[collectionName]/index.js))
 - **react-query hooks** ([hooks folder](hooks/) & [components/Buttons](components/Buttons/index.js); useDelete & useUpdate not used yet.)
 
 ### New Libraries I Tried
@@ -40,11 +40,11 @@
 
   > Having reached the point in my app’s development where I do need a Lambda–to chat with the Apache Cassandra database where I’ll be storing my translations–it seemed worthwhile to feature-compare my walkthroughs of the three APIs.
 
-- [6 Tricks for Simpler Cloud CV (Dec 2020)](https://joeyanuff-33180.medium.com/6-tricks-for-simpler-cloud-cv-1036b99ac791): **How AWS Amplify simplifies my workflow.**
+- [6 Tricks for Simpler Cloud CV (Dec 2020)](https://joeyanuff-33180.medium.com/6-tricks-for-simpler-cloud-cv-1036b99ac791): **How AWS Amplify simplified my workflow.**
 
   > My prototype app used two custom Lambda endpoints, configured using Amazon’s Gateway API: a Node.js function to save images to S3 and a Python function to call Amazon’s Textract OCR service. With Amplify, both of these are one-liners.
 
-- [6 Tricks for Next-Level CRUDs (Dec 2020)](https://joeyanuff-33180.medium.com/6-tricks-for-next-level-cruds-9a916d9e4c87): **How to use react-query to monitor cached data.**
+- [6 Tricks for Next-Level CRUDs (Dec 2020)](https://joeyanuff-33180.medium.com/6-tricks-for-next-level-cruds-9a916d9e4c87): **How to use react-query to maximize your cached data.**
 
   > Changes on the detail page are reflected instantly–and reverted if they fail–using the Optimistic Update strategy. With React Query’s devtools drawer open, we have perfect visibility into the state of our cache.
 
